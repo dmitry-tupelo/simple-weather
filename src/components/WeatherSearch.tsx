@@ -17,7 +17,7 @@ const WeatherSearch = (props: any) => {
   const fetchAPI = () => {
     // Make a GET request
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${searchValue}`
+      `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${searchValue}`
     )
       .then((response) => {
         if (!response.ok) {
