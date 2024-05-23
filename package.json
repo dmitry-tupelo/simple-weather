@@ -22,7 +22,8 @@
   "react-scripts": {
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build": "react-scripts build"
   },
   "scripts": {
     "predeploy": "npm run build",
