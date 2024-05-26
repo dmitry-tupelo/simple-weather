@@ -8,7 +8,7 @@ const citiesSlice = createSlice({
       state.push(action.payload);
     },
     removeCity(state, action) {
-      return state.filter((item: any) => item.location.name !== action.payload);
+      return state.filter((item: any) => item !== action.payload);
     },
   },
 });

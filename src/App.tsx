@@ -13,7 +13,10 @@ function App() {
       <WeatherSearch />
       {weather ? (
         <div className="w-full">
-          <WeatherCard weather={weather} isSearchResult />
+          <WeatherCard
+            weather={weather?.location?.name}
+            isSearchResult={true}
+          />
         </div>
       ) : null}
       {cities.length > 0 && <CitiesList />}
