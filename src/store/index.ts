@@ -14,11 +14,13 @@ import storage from "redux-persist/lib/storage";
 import weatherReducer from "./weatherReducer";
 import citiesReducer from "./citiesReducer";
 import searchReducer from "./searchReducer";
+import userReducer from "./userReducer";
 
 const rootReducer = combineReducers({
   weather: weatherReducer,
   search: searchReducer,
   cities: citiesReducer,
+  user: userReducer,
 });
 
 const persistConfig = {

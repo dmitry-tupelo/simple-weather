@@ -47,7 +47,6 @@ const WeatherCard = (props: any) => {
   useEffect(() => {
     fetchAPI(weather);
   }, []);
-  console.log(weather, cityWeather);
 
   return (
     <div>

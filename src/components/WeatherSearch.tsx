@@ -48,14 +48,14 @@ const WeatherSearch = (props: any) => {
   return (
     <div className="flex flex-col items-center">
       <input
-        className="p-2 border-2 rounded-md border-stone-300 capitalize my-4"
+        className="p-2 border-2 rounded-md border-stone-300 capitalize my-4 border-sky-300"
         value={searchValue}
         onChange={handleCityChange}
         type="text"
         placeholder="Type your city"
       />
       {!loading ? (
-        <div>
+        <div className="w-full">
           {weather ? (
             <div className="w-full">
               <WeatherCard
